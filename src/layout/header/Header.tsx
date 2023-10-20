@@ -4,13 +4,15 @@ import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {SocialsIcons} from "../../components/socialsIcons/SocialsIcons";
 
+const items = ["Projects", "Technologies", "Contacts"]
+
 export const Header = () => {
     return (
         <div>
             <StyledHeader>
                 <Logo/>
                 Portfolio
-                <Menu/>
+                <Menu menuItems={items}/>
                 <SocialsIcons/>
             </StyledHeader>
         </div>

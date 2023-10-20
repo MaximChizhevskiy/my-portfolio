@@ -17,7 +17,7 @@ export const Skills = () => {
                 <Skill iconId={"reduxSvg"}/>
                 <Skill iconId={"gitSvg"}/>
                 <Skill iconId={"gitHubSvg"}/>
-                <Skill iconId={"materialUiSvg"}/>
+                <Skill iconId={"jestSvg"}/>
                 <Skill iconId={"styledSvg"}/>
             </FlexWrapper>
         </StyledSkills>
