@@ -4,7 +4,7 @@ import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {SocialsIcons} from "../../components/socialsIcons/SocialsIcons";
 
-const items = ["Projects", "Technologies", "Contacts"]
+const items = ["Projects", "Technologies", "contacts"]
 
 export const Header = () => {
     return (
