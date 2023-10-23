@@ -5,6 +5,7 @@ import styled from "styled-components";
 import {Skills} from "./layout/section/skills/Skills";
 import {Projects} from "./layout/section/projects/Projects";
 import {Contact} from "./layout/section/contacts/Contacts";
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Skills/>
             <Projects/>
             <Contact/>
+            <Footer/>
         </div>
     );
 }
