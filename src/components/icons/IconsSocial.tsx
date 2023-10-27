@@ -10,7 +10,7 @@ type IconSocialPropsType = {
 
 export const IconsSocial = (props: IconSocialPropsType) => {
     return (
-        <svg width={props.width || "88"} height={props.height || "88"} viewBox={props.viewBox || "0 0 88 88"}
+        <svg width={props.width || "32"} height={props.height || "32"} viewBox={props.viewBox || "0 0 32 32"}
              fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={`${iconsSprite}#${props.IconId}`}/>
         </svg>

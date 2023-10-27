@@ -4,15 +4,18 @@ import styled from "styled-components";
 
 export const SocialsIcons = () => {
     return (
-        <div>
+        <StyledSocialsIcons>
         <IconsSocial IconId={"gitHubMinSvg"}/>
         <IconsSocial IconId={"linkedInSvg"}/>
         <IconsSocial IconId={"telegramSvg"}/>
-        </div>
+        </StyledSocialsIcons>
 
     );
 };
 
-const StyledSocialsIcons = styled.svg`
- 
+const StyledSocialsIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+  min-width: 150px;
  `;

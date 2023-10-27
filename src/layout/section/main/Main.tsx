@@ -8,8 +8,8 @@ export const Main = () => {
         <StyledMain>
            <FlexWrapper align={'center'} justify={'space-around'}>
                <div>
-                   <span>Hi, There!</span>
-                   <Name>I'm Lorem ipsum</Name>
+                   <span>Hi, There!👋</span>
+                   <Name>I'm Maxim Chizhevskiy</Name>
                    <MainTitle>Frontend developer</MainTitle>
                </div>
                <Photo src={photo} alt={'Maxim Chizhevskiy'}/>
@@ -23,7 +23,7 @@ const Photo = styled.img`
   height: 450px;
   object-fit: cover;
 `
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   background: #48a111;
   color: #FFF;
