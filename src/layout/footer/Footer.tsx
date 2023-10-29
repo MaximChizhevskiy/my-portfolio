@@ -23,8 +23,9 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   height: 18vh;
-  background-color: #b94dff;
+  background-color: #0F1624;
   padding-top: 35px;
+  color: #FFF;
   
 `
 

@@ -22,6 +22,7 @@ export const GlobalStyled = createGlobalStyle`
    
   a {
     text-decoration: none;
+    color: #FFF;
   }
   
   ul {
@@ -29,7 +30,7 @@ export const GlobalStyled = createGlobalStyle`
   }
   
   button {
-    background-color: unset;
+    background-color: purple;
     border: none;
   }
   

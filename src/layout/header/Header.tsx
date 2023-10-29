@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
 import {SocialsIcons} from "../../components/socialsIcons/SocialsIcons";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
-const items = ["Projects", "Technologies", "contacts"]
+const items = ["Projects", "Technologies", "Contacts"]
 
 export const Header = () => {
     return (
@@ -15,8 +15,7 @@ export const Header = () => {
                 <Container>
                     <FlexWrapper justify={"space-between"} align={"center"}>
                         <Logo/>
-                        Portfolio
-                        <Menu menuItems={items}/>
+                        <HeaderMenu menuItems={items}/>
                         <SocialsIcons/>
                     </FlexWrapper>
                 </Container>
@@ -27,8 +26,14 @@ export const Header = () => {
 
 //styles
 const StyledHeader = styled.header`
-  background-color: #73ec9d;
+  background-color: #161D2A;
   color: #FFF;
+  position: fixed;
+  padding: 10px 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   
   ul {
     display: flex;

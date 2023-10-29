@@ -22,7 +22,8 @@ export const Project = (props: WorkProjectType) => {
 };
 
 const StyledProject = styled.div`
-  background-color: lightgreen;
+  background-color: #363636;
+  color: #CCC;
   max-width: 375px;
   width: 100%;
   border-radius: 20px;
