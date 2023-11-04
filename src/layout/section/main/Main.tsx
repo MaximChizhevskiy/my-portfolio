@@ -29,7 +29,6 @@ const Photo = styled.img`
   width: 380px;
   height: 450px;
   object-fit: cover;
-  /*border: 10px solid ${theme.colors.accent};*/
   border-radius: 50px 0;
 `
 const PhotoWrapper = styled.div`
