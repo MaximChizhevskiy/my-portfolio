@@ -19,6 +19,7 @@ export const GlobalStyled = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.primaryFontColor};
   }
+  
    
   a {
     text-decoration: none;
