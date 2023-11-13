@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {PreviewLinks} from "./previewLinks/PreviewLinks";
 import {Button} from "../../../../components/Button";
+import {theme} from "../../../../styles/Theme";
 
 type WorkProjectType = {
     title: string
@@ -29,7 +30,7 @@ export const Project = (props: WorkProjectType) => {
 
 const StyledProject = styled.div`
   background-color: #363636;
-  color: #CCC;
+  color: ${theme.colors.titlesColor};
   max-width: 375px;
   width: 100%;
   border-radius: 20px;

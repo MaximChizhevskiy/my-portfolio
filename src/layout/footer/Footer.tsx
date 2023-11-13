@@ -22,7 +22,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  height: 18vh;
+  height: 15vh;
   background-color: #0F1624;
   padding-top: 35px;
   color: #FFF;
