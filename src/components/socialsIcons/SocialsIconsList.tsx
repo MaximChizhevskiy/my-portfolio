@@ -18,7 +18,11 @@ const StyledSocialsIcons = styled.div`
   display: flex;
   justify-content: space-between;
   vertical-align: center;
-  min-width: 150px;  
+  min-width: 150px;
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `;
 
 const StyledLink = styled.a`

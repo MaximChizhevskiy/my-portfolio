@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme";
 
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <StyledHeaderMenu>
             <ul>
                 {props.menuItems.map((item, index) => {
                     return <ListItem key={index}>
@@ -19,15 +20,18 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
                     </ListItem>
                 })}
             </ul>
-        </StyledMenu>
+        </StyledHeaderMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     justify-content: center;
   }
+  @media ${theme.media.tablet} {
+    display: none;
+  } 
 `
 
 const Link = styled.a`

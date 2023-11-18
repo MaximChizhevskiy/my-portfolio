@@ -7,5 +7,10 @@ export const theme = {
         primaryFontColor: "#363636",
         secondaryFontColor: "#A7A7A7",
         titlesColor: "#CCC"
+    },
+
+    media:{
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 }

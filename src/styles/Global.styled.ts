@@ -30,8 +30,7 @@ export const GlobalStyled = createGlobalStyle`
     list-style: none;
   }
   
-  button {
-    background-color: purple;
+  button {    
     border: none;
   }
   
