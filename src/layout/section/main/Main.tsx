@@ -4,15 +4,16 @@ import photo from '../../../assets/images/main_photo.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-           <FlexWrapper align={'center'} justify={'space-between'}>
+           <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                <div>
                    <GreetingStyled>Hi, There!👋</GreetingStyled>
-                   <Name>I'm <span>Maxim Chizhevskiy</span></Name>
+                   <Name><p>I'm</p> <span>Maxim Chizhevskiy</span></Name>
                    <MainTitle>Frontend developer.</MainTitle>
                </div>
 
@@ -30,9 +31,15 @@ const Photo = styled.img`
   height: 450px;
   object-fit: cover;
   border-radius: 50px 0;
+  
+  @media ${theme.media.mobile}{
+    width: 310px;  
+    height: 380px;
+  }
 `
 const PhotoWrapper = styled.div`
   position: relative;
+  margin-top: 25px;
   
   &::before {
     content: "";
@@ -44,6 +51,11 @@ const PhotoWrapper = styled.div`
     top: -20px;
     left: 24px;
     border-radius: 50px 0;
+
+    @media ${theme.media.mobile}{
+      width: 290px;
+      height: 400px;
+    }
   }
 `
 
@@ -54,31 +66,29 @@ const StyledMain = styled.section`
 `
 
 const GreetingStyled = styled.span`
-  font-size: 38px;
+  ${font({weight: 700, Fmax: 35, Fmin: 25})}
   font-style: normal;
-  font-weight: 700;
   line-height: 70px;
   letter-spacing: -1px;
 `
 
 const MainTitle = styled.h1`
-  font-size: 38px;
+  ${font({weight: 700, Fmax: 35, Fmin: 25})}
   font-style: normal;
-  font-weight: 700;
   line-height: 70px;
   letter-spacing: -1px;
 `
 
 const Name = styled.h2`
-  font-size: 48px;
+  ${font({weight: 700, Fmax: 45, Fmin: 35})}
   font-style: normal;
-  font-weight: 700;
   line-height: 70px;
   letter-spacing: -1px;
   
   span {
     position: relative;
     z-index: 0;
+    white-space: nowrap;
     &::before {
       content: "";
       display: inline-block;
@@ -90,6 +100,11 @@ const Name = styled.h2`
       bottom: 0;
       z-index: -1;
     }  
+  }
+  
+  @media ${theme.media.mobile} {
+    margin: 5px 0 5px;
+    line-height: 35px;    
   }
 `
 
