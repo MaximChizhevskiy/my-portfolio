@@ -107,4 +107,3 @@ const Name = styled.h2`
     line-height: 35px;    
   }
 `
-

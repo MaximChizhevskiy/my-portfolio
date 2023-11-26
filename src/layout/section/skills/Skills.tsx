@@ -10,7 +10,7 @@ export const Skills = () => {
         <StyledSkills>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                <FlexWrapper wrap={"wrap"} justify={"space-around"}>
                     <Skill iconId={"htmlSvg"} skillTitle={"HTML5"}/>
                     <Skill iconId={"cssSvg"} skillTitle={"CSS3"}/>
                     <Skill iconId={"jsSvg"} skillTitle={"JavaScript"}/>
@@ -27,5 +27,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
- 
+    
 `
