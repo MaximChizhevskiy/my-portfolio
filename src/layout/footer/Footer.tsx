@@ -2,11 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {SocialsIconsList} from "../../components/socialsIcons/SocialsIconsList";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {theme} from "../../styles/Theme";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper justify={"space-around"} align-items={"center"}>
+            <FlexWrapper justify={"space-around"} align-items={"center"} wrap={"wrap"}>
             <ContentBlock>
                 <Text>Call me:</Text>
                 <Text>+7-(701)-855-68-18</Text>
@@ -16,7 +17,7 @@ export const Footer = () => {
                 <Text>max15.91@mail.ru</Text>
             </ContentBlock>
                 <ContentBlock>
-            <SocialsIconsList/>
+            <SocialsIconsList isFooter/>
                 </ContentBlock>
             </FlexWrapper>
         </StyledFooter>
@@ -31,7 +32,9 @@ const StyledFooter = styled.footer`
 `
 
 const ContentBlock = styled.div`
-    
+    @media ${theme.media.mobile} {
+      margin: 15px;
+    }
 `
 
 const Text = styled.p`

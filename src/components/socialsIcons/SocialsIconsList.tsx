@@ -3,9 +3,13 @@ import {IconsSocial} from "../icons/IconsSocial";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
-export const SocialsIconsList = () => {
+type SocialsIconsListPropsType ={
+    isFooter?: boolean
+}
+
+export const SocialsIconsList = ({ isFooter }: SocialsIconsListPropsType) => {
     return (
-        <StyledSocialsIcons>
+        <StyledSocialsIcons isFooter={isFooter}>
             <StyledLink><IconsSocial IconId={"gitHubMinSvg"} /></StyledLink>
             <StyledLink><IconsSocial IconId={"linkedInSvg"}/></StyledLink>
             <StyledLink><IconsSocial IconId={"telegramSvg"}/></StyledLink>
@@ -14,14 +18,14 @@ export const SocialsIconsList = () => {
     );
 };
 
-const StyledSocialsIcons = styled.div`
+const StyledSocialsIcons = styled.div<{isFooter?: boolean}>`
   display: flex;
   justify-content: space-between;
   vertical-align: center;
   min-width: 150px;
 
   @media ${theme.media.tablet} {
-    display: none;
+    display: ${({isFooter}) => (isFooter ? 'flex' : 'none')};
   }
 `;
 
