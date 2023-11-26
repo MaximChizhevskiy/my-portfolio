@@ -12,7 +12,7 @@ export const Projects = () => {
         <StyledProjects>
             <Container>
             <SectionTitle>Projects</SectionTitle>
-            <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
+            <FlexWrapper justify={"space-around"} align={"flex-start"} wrap={"wrap"}>
             <Project title={"Social network (In progress)"}
                      text={"This is sample project description random things are here in" +
                 " description This is sample project lorem ipsum generator for dummy content"}
@@ -30,4 +30,5 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
   min-height: 100vh;  
+  
 `

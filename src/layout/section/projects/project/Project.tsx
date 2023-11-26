@@ -35,6 +35,10 @@ const StyledProject = styled.div`
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+  
+  @media ${theme.media.tablet} {
+    margin-bottom: 20px;
+  }
 `
 
 const Image = styled.img`
