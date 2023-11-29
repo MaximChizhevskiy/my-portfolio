@@ -18,8 +18,10 @@ export const Skills = () => {
                     <Skill iconId={"reactSvg"} skillTitle={"React"}/>
                     <Skill iconId={"reduxSvg"} skillTitle={"Redux"}/>
                     <Skill iconId={"gitSvg"} skillTitle={"Git"}/>
+                    <Skill iconId={"storybookSvg"} skillTitle={"Storybook"}/>
                     <Skill iconId={"jestSvg"} skillTitle={"Jest"}/>
                     <Skill iconId={"styledSvg"} skillTitle={"Styled Components"}/>
+                    <Skill iconId={"materialSvg"} skillTitle={"Material UI"}/>
                 </FlexWrapper>
             </Container>
         </StyledSkills>
