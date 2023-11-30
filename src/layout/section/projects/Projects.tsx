@@ -12,14 +12,14 @@ const workData = [
         text: "This is sample project description random things are here in" +
             " description This is sample project lorem ipsum generator for dummy content",
         src: socialImg,
-        stack: "Tech stack: HTML , JavaScript, SASS, React"
+        stack: "HTML, JavaScript, SASS, React"
     },
     {
         title: "Todolist",
         text: "This is sample project description random things are here in" +
             " description This is sample project lorem ipsum generator for dummy content",
         src: socialImg,
-        stack: "Tech stack: HTML , JavaScript, SASS, React"
+        stack: "HTML , JavaScript, SASS, React"
     }
 ]
 

@@ -53,9 +53,7 @@ const ImageWrapper = styled.div`
   }
 `
 
-const Title = styled.h3`
-
-`
+const Title = styled.h3``
 
 const Description = styled.div`
   padding: 25px 25px;
@@ -80,6 +78,23 @@ const Stack = styled.p`
 `
 const PreviewLinks = styled.div``
 
+const PreviewLink = styled.div``
+
+const LinkText = styled.a`
+  font-family: Poppins, sans-serif;
+  margin-left: 10px;
+  margin-right: 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-decoration-line: underline;
+
+  :hover {
+    color: ${theme.colors.accent};
+  }
+`
+
 export const S = {
     Projects,
     Project,
@@ -89,6 +104,8 @@ export const S = {
     Description,
     Text,
     Stack,
-    PreviewLinks
+    PreviewLinks,
+    PreviewLink,
+    LinkText
 }
 

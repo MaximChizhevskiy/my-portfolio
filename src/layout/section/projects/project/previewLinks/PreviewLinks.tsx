@@ -1,15 +1,15 @@
 import React from 'react';
-import {PreviewLnk} from "./previewLink/PreviewLnk";
+import {PreviewLink} from "./previewLink/PreviewLink";
 import {FlexWrapper} from "../../../../../components/FlexWrapper";
-import { S } from '../../Projects_Styles';
+import {S} from '../../Projects_Styles';
 
 
-export const PreviewLinks = () => {
+export const PreviewLinks: React.FC = () => {
     return (
         <S.PreviewLinks>
             <FlexWrapper justify={"space-between"}>
-          <PreviewLnk iconId={"linkProjSvg"} linkText={"Live Preview"}/>
-          <PreviewLnk iconId={"gitHubProjSvg"} linkText={"View Code"}/>
+          <PreviewLink iconId={"linkProjSvg"} linkText={"Live Preview"}/>
+          <PreviewLink iconId={"gitHubProjSvg"} linkText={"View Code"}/>
             </FlexWrapper>
         </S.PreviewLinks>
     );
