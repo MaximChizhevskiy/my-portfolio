@@ -1,20 +1,17 @@
 import React from 'react';
 import {PreviewLnk} from "./previewLink/PreviewLnk";
-import styled from "styled-components";
 import {FlexWrapper} from "../../../../../components/FlexWrapper";
+import { S } from '../../Projects_Styles';
 
 
 export const PreviewLinks = () => {
     return (
-        <StyledPreviewLinks>
+        <S.PreviewLinks>
             <FlexWrapper justify={"space-between"}>
           <PreviewLnk iconId={"linkProjSvg"} linkText={"Live Preview"}/>
           <PreviewLnk iconId={"gitHubProjSvg"} linkText={"View Code"}/>
             </FlexWrapper>
-        </StyledPreviewLinks>
+        </S.PreviewLinks>
     );
 };
 
-
-const StyledPreviewLinks = styled.div`
-`
