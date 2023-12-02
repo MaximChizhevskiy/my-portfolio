@@ -3,6 +3,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./project/Project";
 import socialImg from "../../../assets/images/Social-network.webp"
+import Todo from "../../../assets/images/Todo.webp"
 import {Container} from "../../../components/Container";
 import {S} from './Projects_Styles';
 
@@ -18,7 +19,7 @@ const workData = [
         title: "Todolist",
         text: "This is sample project description random things are here in" +
             " description This is sample project lorem ipsum generator for dummy content",
-        src: socialImg,
+        src: Todo,
         stack: "HTML , JavaScript, SASS, React"
     }
 ]
