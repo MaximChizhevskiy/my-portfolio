@@ -54,6 +54,9 @@ const MainTitle = styled.h1`
   font-style: normal;
   line-height: 70px;
   letter-spacing: -1px;
+  p {
+    display: none;
+  }
 `
 
 const Name = styled.h2`
