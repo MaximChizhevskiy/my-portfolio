@@ -4,9 +4,11 @@ import {Button} from "../../../components/Button";
 
 const Projects = styled.section`
   min-height: 100vh;
+  
 `
 
 const Project = styled.div`
+  position: relative;
   background-color: #363636;
   color: ${theme.colors.titlesColor};
   max-width: 375px;
