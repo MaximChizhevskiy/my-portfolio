@@ -6,8 +6,14 @@ const TitleLogo = styled.span`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: white;
+`
+
+const LinkLogo = styled.a`
+cursor: pointer;
 `
 
 export const S = {
-    TitleLogo
+    TitleLogo,
+    LinkLogo
 }
