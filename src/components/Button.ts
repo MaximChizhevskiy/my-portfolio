@@ -5,16 +5,16 @@ export const Button = styled.button`
   width: 200px;
   height: 60px;
   flex-shrink: 0;
-  background-color: ${theme.colors.accent};
+  background: ${theme.colors.accent};
   border-radius: 83px;
   color: #FFF;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: normal;  
   cursor: pointer;
   
   :hover {
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%)
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
   }
 `

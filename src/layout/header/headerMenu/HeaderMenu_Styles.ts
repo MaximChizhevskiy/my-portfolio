@@ -26,8 +26,9 @@ const Mask = styled.span`
 //menu
 const NavLink = styled(Link)`
   font-family: 'Poppins',serif;
-  font-size: 16px;
+  font-size: 20px;
   color: transparent;
+  transition: ${theme.animations.transition};
   cursor: pointer;
   
   &::before {
@@ -41,11 +42,11 @@ const NavLink = styled(Link)`
     left: -10px;
     right: -10px;
     z-index: 1;
-
     transform: scale(0);
+    transition: ${theme.animations.transition};
   }
 
-  &:hover {
+  &:hover, &.active {
     &::before{
       transform: scale(1);
     }
@@ -67,18 +68,21 @@ const MobileMenu = styled.nav`
 const MobileMenuPopup = styled.div<{isOpen: boolean}>`
   position: fixed;
   background-color: rgba(15, 22, 36, 0.9);
-  display: none;
+  display: flex;
   z-index: 99999;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+    transform: translateY(0);
+    transition: .5s ease-in-out;
   `}
+  
   ul {
     display: flex;
     gap: 30px;
@@ -141,7 +145,6 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     }
   }
  `
-
 
 //desktop menu
 const DesktopMenu = styled.nav`

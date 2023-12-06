@@ -3,12 +3,12 @@ import {S} from '../HeaderMenu_Styles'
 
 const items = [
     {
-        title: "Projects",
-        href: "projects"
-    },
-    {
         title: "Skills",
         href: "skills"
+    },
+    {
+        title: "Projects",
+        href: "projects"
     },
     {
         title: "Contacts",
@@ -25,7 +25,8 @@ export const Menu: React.FC = () => {
                         <S.NavLink to={item.href}
                                    smooth={true}
                                    activeClass="active"
-                                   spy={true}>
+                                   spy={true}
+                                   offset={5}>
                             {item.title}
                             <S.Mask>
                                 <span>{item.title}</span>

@@ -4,7 +4,6 @@ import {Button} from "../../../components/Button";
 
 const Projects = styled.section`
   min-height: 100vh;
-  
 `
 
 const Project = styled.div`
@@ -29,30 +28,38 @@ const Image = styled.img`
 
 const ImageWrapper = styled.div`
   position: relative;
-  :hover {
-    
-    ::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.30);
-      backdrop-filter: blur(4px);
-    }
-    ${Button} {
-      opacity: 1;
-    }
-  }
   
   ${Button} {
     opacity: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-40%);
+    transition: opacity ${theme.animations.transition};
   }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: ${theme.animations.transition};
+  }
+   &:hover {
+     &::before {
+      opacity: 1;
+   }
+  
+    ${Button} {
+      opacity: 1;
+      transform: translate(-50%,-50%);
+      }
+  }   
 `
 
 const Title = styled.h3``
@@ -91,9 +98,11 @@ const LinkText = styled.a`
   font-weight: 400;
   line-height: 26px; /* 162.5% */
   text-decoration-line: underline;
-
+  transition: ${theme.animations.transition};
+  
   :hover {
     color: ${theme.colors.accent};
+    
   }
 `
 

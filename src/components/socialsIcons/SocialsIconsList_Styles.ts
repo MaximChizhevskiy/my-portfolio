@@ -13,6 +13,7 @@ const SocialsIcons = styled.div<{isFooter?: boolean}>`
 `;
 
 const Link = styled.a`
+  transition: ${theme.animations.transition};
   :hover {
     color: ${theme.colors.accent};
     transform: translateY(-4px);
