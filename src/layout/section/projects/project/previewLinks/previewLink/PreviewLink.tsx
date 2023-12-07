@@ -6,14 +6,14 @@ import {S} from '../../../Projects_Styles';
 type ViewLnkPropsType = {
     iconId: string
     linkText: string
-
+    href: string
 }
 
 export const PreviewLink: React.FC<ViewLnkPropsType> = (props: ViewLnkPropsType) => {
     return (
         <S.PreviewLink>
             <FlexWrapper>
-            <IconLink IconId={props.iconId}/><S.LinkText href={"#"}>{props.linkText}</S.LinkText>
+            <IconLink IconId={props.iconId}/><S.LinkText href={props.href}>{props.linkText}</S.LinkText>
             </FlexWrapper>
         </S.PreviewLink>
     );

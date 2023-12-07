@@ -8,8 +8,8 @@ export const PreviewLinks: React.FC = () => {
     return (
         <S.PreviewLinks>
             <FlexWrapper justify={"space-between"}>
-          <PreviewLink iconId={"linkProjSvg"} linkText={"Live Preview"}/>
-          <PreviewLink iconId={"gitHubProjSvg"} linkText={"View Code"}/>
+          <PreviewLink iconId={"linkProjSvg"} linkText={"Live Preview"} href={"#"}/>
+          <PreviewLink iconId={"gitHubProjSvg"} linkText={"View Code"} href={"#"}/>
             </FlexWrapper>
         </S.PreviewLinks>
     );

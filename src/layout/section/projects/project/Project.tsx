@@ -6,7 +6,7 @@ import {PreviewLinks} from "./previewLinks/PreviewLinks";
 type WorkProjectType = {
     title: string
     text: string
-    src: string
+    imgSrc: string
     stack: string
 }
 
@@ -14,7 +14,7 @@ export const Project: React.FC<WorkProjectType> = (props: WorkProjectType) => {
     return (
         <S.Project>
             <S.ImageWrapper>
-                <S.Image src={props.src} alt={""}/>
+                <S.Image src={props.imgSrc} alt={""}/>
                 <Button>View Project</Button>
             </S.ImageWrapper>
             <S.Description>

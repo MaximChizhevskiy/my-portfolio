@@ -13,14 +13,14 @@ const workData = [
         text: "Social Network is an online platform that allows people to create an account and interact " +
             "with other people on the website. Users can build there virtual world on the site, " +
             "make friends and share their thoughts and ideas by writing a post.",
-        src: socialImg,
+        imgSrc: socialImg,
         stack: "React, Redux, TypeScript"
     },
     {
         title: "Todolist",
         text: "ToDo List is an online platform for organizing your personal or work tasks which can help you to " +
             "increase the productivity, prioritise tasks, manage tasks effectively and improve time management.",
-        src: Todo,
+        imgSrc: Todo,
         stack: "React, Redux-toolkit, TypeScript, Hooks, MUI"
     }
 ]
@@ -32,7 +32,7 @@ export const Projects: React.FC = () => {
                 <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper justify={"space-around"} align={"flex-start"} wrap={"wrap"}>
                     {workData.map((p, index) => {
-                        return <Project key={index} title={p.title} text={p.text} src={p.src} stack={p.stack}/>
+                        return <Project key={index} title={p.title} text={p.text} imgSrc={p.imgSrc} stack={p.stack} />
                     })}
                 </FlexWrapper>
             </Container>
