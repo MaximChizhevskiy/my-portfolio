@@ -14,14 +14,18 @@ const workData = [
             "with other people on the website. Users can build there virtual world on the site, " +
             "make friends and share their thoughts and ideas by writing a post.",
         imgSrc: socialImg,
-        stack: "React, Redux, TypeScript"
+        stack: "React, Redux, TypeScript",
+        previewLink: "#",
+        gitHubLink:"https://github.com/MaximChizhevskiy/social-network"
     },
     {
         title: "Todolist",
         text: "ToDo List is an online platform for organizing your personal or work tasks which can help you to " +
             "increase the productivity, prioritise tasks, manage tasks effectively and improve time management.",
         imgSrc: Todo,
-        stack: "React, Redux-toolkit, TypeScript, Hooks, MUI"
+        stack: "React, Redux-toolkit, TypeScript, Hooks, MUI",
+        previewLink: "https://maximchizhevskiy.github.io/todolist/",
+        gitHubLink: "https://github.com/MaximChizhevskiy/todolist"
     }
 ]
 
@@ -32,7 +36,8 @@ export const Projects: React.FC = () => {
                 <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper justify={"space-around"} align={"flex-start"} wrap={"wrap"}>
                     {workData.map((p, index) => {
-                        return <Project key={index} title={p.title} text={p.text} imgSrc={p.imgSrc} stack={p.stack} />
+                        return <Project key={index} title={p.title} text={p.text} imgSrc={p.imgSrc} stack={p.stack}
+                                        previewHref={p.previewLink} gitHubHref={p.gitHubLink}/>
                     })}
                 </FlexWrapper>
             </Container>
