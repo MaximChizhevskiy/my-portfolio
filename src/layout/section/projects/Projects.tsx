@@ -2,21 +2,20 @@ import React from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./project/Project";
-import socialImg from "../../../assets/images/Social-network.webp"
+import RickAndMorty from "../../../assets/images/rick-and-morty.webp"
 import Todo from "../../../assets/images/Todo.webp"
 import {Container} from "../../../components/Container";
 import {S} from './Projects_Styles';
 
 const workData = [
     {
-        title: "Social network (In progress)",
-        text: "Social Network is an online platform that allows people to create an account and interact " +
-            "with other people on the website. Users can build there virtual world on the site, " +
-            "make friends and share their thoughts and ideas by writing a post.",
-        imgSrc: socialImg,
-        stack: "React, Redux, TypeScript",
-        previewLink: "#",
-        gitHubLink:"https://github.com/MaximChizhevskiy/social-network"
+        title: "Rick and Morty app",
+        text: "This project was built using the Rick and Morty API. The main goal of the project was to work " +
+            "with external RESTful APIs, dynamic data rendering and modern frontend technologies.",
+        imgSrc: RickAndMorty,
+        stack: "React, JavaScript, React Router, Axios, Vite",
+        previewLink: "https://maximchizhevskiy.github.io/rick-and-morty-app/",
+        gitHubLink:"https://github.com/MaximChizhevskiy/rick-and-morty-app"
     },
     {
         title: "Todolist",
