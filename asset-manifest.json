@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/my-portfolio/static/js/main.e41fef49.js",
+    "main.js": "/my-portfolio/static/js/main.f53e6494.js",
     "static/js/787.25eaef86.chunk.js": "/my-portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/Todo.webp": "/my-portfolio/static/media/Todo.5d16ebfdeb0d1b11d69a.webp",
     "static/media/rick-and-morty.webp": "/my-portfolio/static/media/rick-and-morty.98ad82e29141d4e0b952.webp",
@@ -9,10 +9,10 @@
     "static/media/logo-ellipse-sprite.svg": "/my-portfolio/static/media/logo-ellipse-sprite.43fb0edddeb6b3d568f9d5079eec17b6.svg",
     "static/media/icons-projects.svg": "/my-portfolio/static/media/icons-projects.4ff054db4b31fdead77f22c548c9ef75.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.e41fef49.js.map": "/my-portfolio/static/js/main.e41fef49.js.map",
+    "main.f53e6494.js.map": "/my-portfolio/static/js/main.f53e6494.js.map",
     "787.25eaef86.chunk.js.map": "/my-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e41fef49.js"
+    "static/js/main.f53e6494.js"
   ]
 }
