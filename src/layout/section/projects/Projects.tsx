@@ -23,8 +23,8 @@ const workData = [
             "increase the productivity, prioritise tasks, manage tasks effectively and improve time management.",
         imgSrc: Todo,
         stack: "React, Redux-toolkit, TypeScript, Hooks, MUI",
-        previewLink: "https://maximchizhevskiy.github.io/todolist/",
-        gitHubLink: "https://github.com/MaximChizhevskiy/todolist"
+        previewLink: "https://maximchizhevskiy.github.io/task-manager/",
+        gitHubLink: "https://github.com/MaximChizhevskiy/task-manager"
     }
 ]
 
